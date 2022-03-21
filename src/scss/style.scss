@@ -1,0 +1,36 @@
+:root {
+  --dark-shade-50: rgba(31, 32, 65, 0.5);
+  --purple: #bc9cff;
+  --primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400, Regular;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700, Regular;
+}
+
+.background {
+  background-image: url("../assets/image/bed-back.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
