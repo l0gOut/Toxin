@@ -19,14 +19,6 @@ module.exports = {
 
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, "src/assets/image/favicon.ico"),
-      icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: true,
-        favicons: true,
-        windows: true,
-        yandex: true,
-      },
     }),
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
@@ -54,7 +46,7 @@ module.exports = {
       },
 
       {
-        test: /\.(png|jpg|svg|jpeg)$/i,
+        test: /\.(png|jpg|svg|jpeg|ico)$/i,
         type: "asset/resource",
       },
       {
