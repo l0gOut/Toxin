@@ -7,6 +7,19 @@
   --primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gradient);
+  border-radius: 5px;
+}
+
 body {
   padding: 0;
   margin: 0;
