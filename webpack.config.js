@@ -1,7 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
@@ -16,18 +15,18 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.pug"),
+      favicon: "src/assets/image/favicon.ico",
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/login.pug"),
+      favicon: "src/assets/image/favicon.ico",
       filename: "login.html",
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/registration.pug"),
+      favicon: "src/assets/image/favicon.ico",
       filename: "registration.html",
-    }),
-    new FaviconsWebpackPlugin({
-      logo: path.resolve(__dirname, "src/assets/image/favicon.ico"),
     }),
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
