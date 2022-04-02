@@ -39,7 +39,7 @@
       display: flex;
       align-items: center;
 
-      button {
+      a {
         position: relative;
         font-family: "Montserrat-Bold", sans-serif;
         font-weight: 700;
@@ -48,9 +48,12 @@
         outline: none;
         border-radius: 22px;
         border: none;
-        padding: 9px 19px;
         height: 34px;
-        padding: 10px 20px;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
 
         &::after {
           z-index: -1;

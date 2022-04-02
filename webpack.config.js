@@ -5,7 +5,9 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: {
+    pageOne: "./src/index.js",
+  },
   output: {
     filename: "[contenthash].js",
     path: path.resolve(__dirname, "dist"),
@@ -16,7 +18,14 @@ module.exports = {
       template: path.resolve(__dirname, "src/index.pug"),
       filename: "index.html",
     }),
-
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/login.pug"),
+      filename: "login.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "src/registration.pug"),
+      filename: "registration.html",
+    }),
     new FaviconsWebpackPlugin({
       logo: path.resolve(__dirname, "src/assets/image/favicon.ico"),
     }),

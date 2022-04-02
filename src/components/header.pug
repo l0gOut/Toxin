@@ -1,5 +1,6 @@
 header(class="header-container")
-    img(src=require("../assets/image/Logo.png") alt="Лого")
+    a(href="./index.html") 
+        img(src=require("../assets/image/Logo.png") alt="Лого")
     .menu 
         h4(class="header_h4") О нас
         select
@@ -15,8 +16,8 @@ header(class="header-container")
             option Соглашения
             option Соглашения
         .container_buttons
-            button ВОЙТИ
-            button ЗАРЕГИСТРИРОВАТЬСЯ
+            a(href="./login.html")  ВОЙТИ
+            a(href="./registration.html")  ЗАРЕГИСТРИРОВАТЬСЯ
         
         
         
