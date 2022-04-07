@@ -8,7 +8,7 @@ html(lang="ru")
         title Регистрация
     body 
         include components/header.pug
-        .background
+        .background-join
             form(class="registration-container")
                 h1 Регистрация аккаунта
                 input(type="text", name="firstName", placeholder="Имя")
@@ -27,11 +27,10 @@ html(lang="ru")
                 input(type="password", name="password", placeholder="Пароль")
                 .container-spec 
                     input(type="checkbox", id="check-spec")
-                    label(for="check-spec")
-                    p Получать спецпредложения
+                    label(for="check-spec") Получать спецпредложения
                 button(class="success_button") ВОЙТИ
                     i(class="material-icons") arrow_forward
-                div 
+                .container-route 
                     p Уже есть аккаунт на Toxin?
                     button(class="route_button",type="submit") ВОЙТИ
                 

@@ -5,6 +5,7 @@
   --dark: rgb(31, 32, 65);
   --purple: #bc9cff;
   --primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  --green: #6fcf97;
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +29,9 @@ h4 {
 
 button,
 input[type="radio"],
-input[type="radio"] + label {
+input[type="checkbox"],
+input[type="radio"] + label,
+input[type="checkbox"] + label {
   cursor: pointer;
 }
 
@@ -50,7 +53,7 @@ input[type="radio"] + label {
   font-weight: 700, Bold;
 }
 
-.background {
+.background-join {
   background-image: url("../assets/image/bed-back.png");
   background-size: cover;
   height: 100vh;
@@ -58,4 +61,11 @@ input[type="radio"] + label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.background {
+  background-image: url("../assets/image/back-room.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
