@@ -5,6 +5,7 @@
   --dark: rgb(31, 32, 65);
   --purple: #bc9cff;
   --primary-gradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  --secondary-gradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   --green: #6fcf97;
 }
 
@@ -27,6 +28,7 @@ h4 {
   margin: 0;
 }
 
+a,
 button,
 input[type="radio"],
 input[type="checkbox"],

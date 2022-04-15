@@ -6,6 +6,7 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 module.exports = {
   entry: {
     pageOne: "./src/index.js",
+    pageTwo: "./src/daterange.js",
   },
   output: {
     filename: "[contenthash].js",
@@ -27,6 +28,7 @@ module.exports = {
       template: path.resolve(__dirname, "src/registration.pug"),
       favicon: "src/assets/image/favicon.ico",
       filename: "registration.html",
+      inject: "body",
     }),
     new ESLintPlugin(),
     new CleanWebpackPlugin(),

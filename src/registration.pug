@@ -5,6 +5,10 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js")
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js")
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js")
+        link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css")
         title Регистрация
     body 
         include components/header.pug
@@ -21,7 +25,7 @@ html(lang="ru")
                         input(type="radio", name="sex",id="sex-woman", value="Women") 
                         label(for="sex-woman") Женщина
                 h4 ДАТА РОЖДЕНИЯ
-                input(type="date")
+                input(type="dates", name="birthday")
                 h4 ДАННЫЕ ДЛЯ ВХОДА В СЕРВИС
                 input(type="text", name="email", placeholder="Email")
                 input(type="password", name="password", placeholder="Пароль")
@@ -32,6 +36,6 @@ html(lang="ru")
                     i(class="material-icons") arrow_forward
                 .container-route 
                     p Уже есть аккаунт на Toxin?
-                    button(class="route_button",type="submit") ВОЙТИ
-                
-        include components/footer.pug
+                    a(class="route_button",href="login.html") ВОЙТИ             
+        include components/footer.pug     
+

@@ -15,7 +15,7 @@ html(lang="ru")
                 input(type="password", name="password", placeholder="Пароль")
                 button(class="success_button") ВОЙТИ
                     i(class="material-icons") arrow_forward
-                div 
+                .container-route 
                     p Нет аккаунта на Toxin?
-                    button(class="route_button",type="submit")  СОЗДАТЬ
+                    a(class="route_button",href="registration.html")  СОЗДАТЬ
         include components/footer.pug

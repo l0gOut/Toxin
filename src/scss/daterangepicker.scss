@@ -1,0 +1,52 @@
+.daterangepicker {
+  .calendar-table .available span {
+    border-color: var(--purple);
+  }
+
+  tr th {
+    color: var(--purple);
+  }
+
+  .calendar-table td {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  td.today,
+  td.active,
+  td.start-date.end-date {
+    border-radius: 22px !important;
+    opacity: 1 !important;
+  }
+
+  td.today {
+    background: var(--secondary-gradient) !important;
+    color: white;
+  }
+
+  td.active {
+    background: var(--primary-gradient) !important;
+  }
+
+  td.in-range {
+    background: var(--purple);
+    opacity: 0.25;
+  }
+
+  .drp-buttons {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+
+    .btn {
+      border: none;
+      outline: none;
+      background: none;
+      color: var(--purple);
+    }
+  }
+}
